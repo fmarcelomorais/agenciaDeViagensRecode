@@ -1,0 +1,73 @@
+.destinos{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   justify-content: center;
+  
+}
+.box-destinos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content:space-between;
+    margin: 10px;
+}
+.promocao{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .promocao h3{
+    font-size: 3rem;    
+    text-align: center;
+ }
+ .info-contato{
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ .info-contato p{
+    font-size: 1.5rem;
+
+ }
+ .formulario{
+    min-width: 40%;
+ }
+ .rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+ }
+ .rodape h5,p{
+    margin: 1px;
+ }
+
+ @media screen and (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-destinos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .promocao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info-contato{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    
+     }
+ }
