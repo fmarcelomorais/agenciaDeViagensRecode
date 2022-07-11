@@ -18,7 +18,7 @@ function cadastrarDestino(e){
 
     arrDestinos.push(destino)
         
-    localStorage.setItem('chave', JSON.stringify(arrDestinos))
+    localStorage.setItem('destinos', JSON.stringify(arrDestinos))
 
     alert("Destino cadastrado com sucesso!")
 
@@ -31,7 +31,7 @@ function cadastrarDestino(e){
 
 $btnCadDestino.addEventListener('click', cadastrarDestino)
 
-const destinos = JSON.parse(localStorage.getItem('chave'))
+const destinos = JSON.parse(localStorage.getItem('destinos'))
 
 async function destinosCadastrados(){     
 
