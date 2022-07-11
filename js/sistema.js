@@ -7,7 +7,7 @@ const destinos = []
 
 function cadastrarDestino(e){
     e.preventDefault();
-    if(!$url && !$titulo && !$descricao)
+    if(!$url.value && !$titulo.value && !$descricao.value)
         alert("Campos não podem ficar em Branco")
     else{
     const destino = {
