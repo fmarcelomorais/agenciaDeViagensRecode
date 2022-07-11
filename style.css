@@ -27,6 +27,7 @@
  }
  .info-contato{
     display: flex;
+    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
 
@@ -36,9 +37,41 @@
     font-size: 1.5rem;
 
  }
+ .info-contato input{
+   margin-left: 5px;
+   margin-top: 10px;
+
+}
  .formulario{
-    min-width: 40%;
+   display: flex;
+   min-width: 40%;
+   flex-direction: column;
  }
+
+ .formulario-login{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ .login{
+   display: flex;
+   flex-direction: column; 
+   justify-content: space-between;
+   align-items: center;
+   width: 40%;
+
+}
+.login input{
+   display: flex;
+   flex-direction: column; 
+   justify-content: space-between;
+   align-items: center;
+   width: 40%;
+   margin-top: 10px;
+
+}
  .rodape{
     display: flex;
     flex-direction: column;
@@ -48,6 +81,8 @@
  .rodape h5,p{
     margin: 1px;
  }
+
+ 
 
  @media screen and (max-width: 768px) {
     main{
@@ -78,11 +113,18 @@
     
      }
 
-     .info-contato p{
-      font-size: 1.5rem;
-  
+      .info-contato p{
+         font-size: 1.5rem;
+      }
+
+   .info-contato input{
+      margin-top: 5px;
    }
-     .rodape{
+   
+
+    .rodape{
       text-align: center;
-     }
+    }
  }
+
+
