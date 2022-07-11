@@ -1,7 +1,7 @@
+const $url = document.getElementById('url')
 const $titulo = document.getElementById('titulo')
 const $descricao = document.getElementById('descricao')
 const $btnCadDestino = document.getElementById('btnCadDestino')
-const $url = document.getElementById('url')
 
 const destinos = []
 
@@ -13,7 +13,7 @@ function cadastrarDestino(e){
         descricao: $descricao.value,
         url: $url.value
     }
-    
+
     destinos.push(destino)
         
     localStorage.setItem('chave', JSON.stringify(destinos))
