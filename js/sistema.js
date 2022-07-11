@@ -3,7 +3,7 @@ const $titulo = document.getElementById('titulo')
 const $descricao = document.getElementById('descricao')
 const $btnCadDestino = document.getElementById('btnCadDestino')
 
-const destinos = []
+const arrDestinos = []
 
 function cadastrarDestino(e){
     e.preventDefault();
@@ -16,10 +16,12 @@ function cadastrarDestino(e){
         url: $url.value
     }
 
-    destinos.push(destino)
+    arrDestinos.push(destino)
         
-    localStorage.setItem('chave', JSON.stringify(destinos))
+    localStorage.setItem('chave', JSON.stringify(arrDestinos))
+
     alert("Destino cadastrado com sucesso!")
+    
     document.getElementById('url').value = ""
     document.getElementById('titulo').value = ""
     document.getElementById('descricao').value = ""
@@ -31,7 +33,7 @@ $btnCadDestino.addEventListener('click', cadastrarDestino)
 
 async function destinosCadastrados(){ 
     const destinos = await JSON.parse(localStorage.getItem('chave'))
-    
+
     let html = ''
 
     if(destinos.length == 0){
