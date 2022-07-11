@@ -32,6 +32,15 @@ $btnCadDestino.addEventListener('click', cadastrarDestino)
 async function destinosCadastrados(){ 
 
     let html = ''
+
+    if(!destinos){
+        html = `
+            <h2>Nenhum Destino Cadastrado</h2>
+            <p>Acesse a área do Administrador e cadastre os Destinos.</p>
+            `
+        document.getElementById('box-destinos').innerHTML = html    
+    }else{
+   
     const destinos = await JSON.parse(localStorage.getItem('chave'))
 
     destinos.map(e => {
@@ -48,5 +57,6 @@ async function destinosCadastrados(){
     });
 
     document.getElementById('box-destinos').innerHTML = html
+}
     
 }
