@@ -31,9 +31,9 @@ function cadastrarDestino(e){
 
 $btnCadDestino.addEventListener('click', cadastrarDestino)
 
-async function destinosCadastrados(){ 
-    
-    const destinos = await JSON.parse(localStorage.getItem('chave'))
+const destinos = await JSON.parse(localStorage.getItem('chave'))
+
+async function destinosCadastrados(){     
 
     let html = ''
 
