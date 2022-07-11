@@ -13,10 +13,12 @@ function cadastrarDestino(e){
         descricao: $descricao.value,
         url: $url.value
     }
+    
     destinos.push(destino)
         
     localStorage.setItem('chave', JSON.stringify(destinos))
 
+    document.getElementById('url').value = ""
     document.getElementById('titulo').value = ""
     document.getElementById('descricao').value = ""
 
