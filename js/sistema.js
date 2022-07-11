@@ -33,7 +33,7 @@ async function destinosCadastrados(){
 
     let html = ''
 
-    if(!destinos){
+    if(destinos.length < 1){
         html = `
             <h2>Nenhum Destino Cadastrado</h2>
             <p>Acesse a área do Administrador e cadastre os Destinos.</p>
