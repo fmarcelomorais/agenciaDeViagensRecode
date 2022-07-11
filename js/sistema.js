@@ -35,11 +35,11 @@ async function destinosCadastrados(){
         html +=
         `
      <div class="card" style="width: 18rem;">
-        <img src="${e.url}" class="card-img-top" alt="...">
+        <img src="${e.url}" class="card-img-top" width="100" alt="ponto turistico">
         <div class="card-body">
           <h5 class="card-title">${e.titulo}</h5>
           <p class="card-text">${e.descricao}</p>
-          <a href="#" class="btn btn-primary">Esse lugar te espera</a>
+          <a href="#" class="btn btn-primary mt-1">Esse lugar te espera</a>
         </div>
       </div> `   
     });
