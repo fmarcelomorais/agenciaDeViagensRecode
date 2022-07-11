@@ -38,7 +38,7 @@ async function destinosCadastrados(){
             <h2>Nenhum Destino Cadastrado</h2>
             <p>Acesse a área do Administrador e cadastre os Destinos.</p>
             `
-       //return html 
+        document.getElementById('box-destinos').innerHTML = html 
 
     }else{
    
@@ -57,9 +57,9 @@ async function destinosCadastrados(){
       </div> `   
     });
 
-    //return  html
+    document.getElementById('box-destinos').innerHTML = html
 }
 
-    document.getElementById('box-destinos').innerHTML = html
+    
     
 }
