@@ -26,7 +26,7 @@ function cadastrarDestino(e){
 
 $btnCadDestino.addEventListener('click', cadastrarDestino)
 
-function destinosCadastrados(){
+function destinosCadastrados(){ 
 
     let html = ''
     const destinos = JSON.parse(localStorage.getItem('chave'))
