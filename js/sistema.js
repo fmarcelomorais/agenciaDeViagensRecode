@@ -31,9 +31,9 @@ function cadastrarDestino(e){
 
 $btnCadDestino.addEventListener('click', cadastrarDestino)
 
-const destinos = JSON.parse(localStorage.getItem('destinos'))
 
-async function destinosCadastrados(){     
+function destinosCadastrados(){     
+    const destinos = JSON.parse(localStorage.getItem('destinos'))
 
     let html = ''
 
