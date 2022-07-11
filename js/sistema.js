@@ -33,7 +33,7 @@ async function destinosCadastrados(){
 
     let html = ''
 
-    if(destinos.length < 1){
+    if(destinos.length == 0){
         html = `
             <div class="formulario">
             <h2>Nenhum Destino Cadastrado</h2>
