@@ -7,7 +7,9 @@ const destinos = []
 
 function cadastrarDestino(e){
     e.preventDefault();
-    
+    if(!$url && !$titulo && !$descricao)
+        alert("Campos não podem ficar em Branco")
+    else{
     const destino = {
         titulo: $titulo.value,
         descricao: $descricao.value,
@@ -17,10 +19,11 @@ function cadastrarDestino(e){
     destinos.push(destino)
         
     localStorage.setItem('chave', JSON.stringify(destinos))
-
+    alert("Destino cadastrado com sucesso!")
     document.getElementById('url').value = ""
     document.getElementById('titulo').value = ""
     document.getElementById('descricao').value = ""
+    }
 
 }
 
