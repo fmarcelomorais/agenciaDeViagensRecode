@@ -21,7 +21,7 @@ function cadastrarDestino(e){
     localStorage.setItem('chave', JSON.stringify(arrDestinos))
 
     alert("Destino cadastrado com sucesso!")
-    
+
     document.getElementById('url').value = ""
     document.getElementById('titulo').value = ""
     document.getElementById('descricao').value = ""
@@ -32,11 +32,12 @@ function cadastrarDestino(e){
 $btnCadDestino.addEventListener('click', cadastrarDestino)
 
 async function destinosCadastrados(){ 
+    
     const destinos = await JSON.parse(localStorage.getItem('chave'))
 
     let html = ''
 
-    if(destinos.length == 0){
+    if(!destinos){
         html = `
             <div class="formulario">
             <h2>Nenhum Destino Cadastrado</h2>
@@ -44,9 +45,7 @@ async function destinosCadastrados(){
             `
         document.getElementById('box-destinos').innerHTML = html 
 
-    }else{
-   
-    
+    }else{   
 
     destinos.map(e => {
         html +=
