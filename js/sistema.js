@@ -35,9 +35,11 @@ async function destinosCadastrados(){
 
     if(destinos.length < 1){
         html = `
+            <div>
             <h2>Nenhum Destino Cadastrado</h2>
             <br>
             <p>Acesse a área do Administrador e cadastre os Destinos.</p>
+            </div>
             `
         document.getElementById('box-destinos').innerHTML = html 
 
