@@ -7,9 +7,11 @@ const arrDestinos = []
 
 function cadastrarDestino(e){
     e.preventDefault();
-    if(!$url.value && !$titulo.value && !$descricao.value)
+    if(!$url.value && !$titulo.value && !$descricao.value){
         alert("Campos não podem ficar em Branco")
-    else{
+
+    }else{
+
     const destino = {
         titulo: $titulo.value,
         descricao: $descricao.value,
@@ -26,6 +28,8 @@ function cadastrarDestino(e){
     document.getElementById('titulo').value = ""
     document.getElementById('descricao').value = ""
     }
+
+   
 
 }
 
@@ -61,6 +65,8 @@ function destinosCadastrados(){
     });
 
     document.getElementById('box-destinos').innerHTML = html
+
+
 }
 
     
