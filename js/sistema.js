@@ -45,6 +45,7 @@ function destinosCadastrados(){
         html = `
             <div class="formulario">
             <h2>Nenhum Destino Cadastrado</h2>
+            <h6>Cadastre destinos na área de <strong>Administrador</strong></h6>
             </div>
             `
         document.getElementById('box-destinos').innerHTML = html 
