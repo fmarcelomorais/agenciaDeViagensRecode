@@ -43,7 +43,7 @@ function destinosCadastrados(){
 
     if(!destinos){
         html = `
-            <div class="formulario">
+            <div class="promocao">
             <h2>Nenhum Destino Cadastrado</h2>
             <h6>Cadastre destinos na área de <strong>Administrador</strong></h6>
             </div>
