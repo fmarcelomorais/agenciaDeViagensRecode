@@ -9,24 +9,23 @@ function cadastrarDestino(e){
     e.preventDefault();
     if(!$url.value && !$titulo.value && !$descricao.value){
         alert("Campos não podem ficar em Branco")
-
     }else{
 
-    const destino = {
-        titulo: $titulo.value,
-        descricao: $descricao.value,
-        url: $url.value
-    }
+        const destino = {
+            titulo: $titulo.value,
+            descricao: $descricao.value,
+            url: $url.value
+        }
 
-    arrDestinos.push(destino)
-        
-    localStorage.setItem('destinos', JSON.stringify(arrDestinos))
+        arrDestinos.push(destino)
+            
+        localStorage.setItem('destinos', JSON.stringify(arrDestinos))
 
-    alert("Destino cadastrado com sucesso!")
+        alert("Destino cadastrado com sucesso!")
 
-    document.getElementById('url').value = ""
-    document.getElementById('titulo').value = ""
-    document.getElementById('descricao').value = ""
+        document.getElementById('url').value = ""
+        document.getElementById('titulo').value = ""
+        document.getElementById('descricao').value = ""
     }
 
    
